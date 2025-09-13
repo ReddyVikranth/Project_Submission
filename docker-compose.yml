@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      - USE_MONGO=false
+      - DATA_DIR=/data
+    volumes:
+      - ./backend/data:/data
+  mongo:
+    image: mongo:6
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data://data/db
+
+volumes:
+  mongo-data:

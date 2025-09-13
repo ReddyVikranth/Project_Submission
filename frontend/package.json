@@ -1,0 +1,19 @@
+{
+  "name": "sample4-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000"
+  },
+  "dependencies": {
+    "next": "13.4.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.7",
+    "postcss": "8.4.21",
+    "autoprefixer": "10.4.14"
+  }
+}
