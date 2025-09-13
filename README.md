@@ -56,7 +56,3 @@ npm test
 ```
 
 Ensure that your environment is properly configured before running tests.
-
-## 📄 License
-
-This project is licensed under the MIT License.
